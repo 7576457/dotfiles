@@ -11,4 +11,12 @@
         "key": "ctrl+t",
         "command": "workbench.action.togglePanel",
     },
+    {   
+        "key": "alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "explorer.newFolder"
+    },
 ]
