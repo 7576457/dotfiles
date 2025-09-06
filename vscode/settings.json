@@ -52,4 +52,18 @@
     "terminal.integrated.defaultLocation": "view",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.enableVisualBell": true,
+
+    "dart.enableSdkFormatter": true,
+    "dart.enableServerSnippets": true,
+    "dart.autoImportCompletions": true,
+    "dart.warnWhenEditingFilesInPubCache": false,
+    "dart.showDartPadSampleCodeLens": false,
+    "dart.lspSnippetTextEdits": true,
+    "[dart]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": false,
+        "editor.insertSpaces": true,
+        "editor.rulers": [120]
+    },
+    "dart.lineLength": 120,
 }
