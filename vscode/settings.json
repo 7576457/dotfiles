@@ -1,0 +1,55 @@
+{
+    "editor.wordWrap": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.folding": false,
+    "editor.fontSize": 16,
+    "editor.rulers": [90],
+    "editor.wordWrapColumn": 90,
+    "editor.guides.indentation": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+
+    "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.panel.defaultLocation": "right",
+    "workbench.statusBar.visible": false,
+    "workbench.editor.showTabs": "single",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+
+    "chat.agent.enabled": false,
+    "chat.commandCenter.enabled": false,
+
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+    "breadcrumbs.enabled": false,
+
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "**/.idea": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.venv": true,
+        "**/.coverage": true,
+        "**/*.py[co]": true,
+        "**/htmlcoverage": true,
+        "**/docs/build": true,
+    },
+
+    "telemetry.telemetryLevel": "off",
+
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.defaultLocation": "view",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.enableVisualBell": true,
+}
