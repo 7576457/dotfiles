@@ -8,6 +8,8 @@
     "editor.guides.indentation": true,
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
 
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.panel.defaultLocation": "right",
