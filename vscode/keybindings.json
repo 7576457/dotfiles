@@ -1,4 +1,59 @@
 [
+    // Копирование строки вверх/вниз: Shift+Alt+Up/Down
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // Мультикурсор вверх/вниз: Ctrl+Alt+Up/Down
+    {
+        "key": "ctrl+alt+up",
+        "command": "-editor.action.copyLinesUpAction"  // отключаем дефолт
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "-editor.action.copyLinesDownAction"  // отключаем дефолт
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+
+    // Выделение по словам вверх/вниз: Ctrl+Shift+Up/Down
+    {
+        "key": "ctrl+shift+up",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+
+    // Создать новый файл/папку в sidebar: Alt+N / Ctrl+Alt+N
+    {   
+        "key": "alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "explorer.newFolder"
+    },
+
+    // Навигация назад/вперед: Alt+Left / Alt+Right
     {
         "key": "alt+left",
         "command": "workbench.action.navigateBack"
@@ -7,16 +62,71 @@
         "key": "alt+right",
         "command": "workbench.action.navigateForward"
     },
+
+    // Терминал: Ctrl+T + (T/D/Enter/F/Arrow Keys)
+    // Ctrl+T Ctrl+T: Показать/скрыть терминал
+    // Ctrl+T Ctrl+D: Показать/скрыть терминал (только при фокусе на терминале)
+    // Ctrl+T Ctrl+Enter: Разделить терминал (только при фокусе на терминале)
+    // Ctrl+T Ctrl+F: Переключить максимизацию панели терминала
+    // Ctrl+T Ctrl+Arrow Keys: Переключение между панелями терминала (только при фокусе на терминале)
     {
-        "key": "ctrl+t",
-        "command": "workbench.action.togglePanel",
-    },
-    {   
-        "key": "alt+n",
-        "command": "explorer.newFile"
+        "key": "ctrl+t ctrl+t",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+alt+n",
-        "command": "explorer.newFolder"
+        "key": "ctrl+t ctrl+d",
+        "command": "workbench.action.terminal.toggleTerminal",   
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+enter",
+        "command": "workbench.action.terminal.split",            
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+f",       
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+t ctrl+up",      
+        "command": "workbench.action.terminal.focusNextPane",     
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+down",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+right",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+t ctrl+left",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+
+    // Изменение размера панелей: Shift+Alt+\ / Shift+Alt+/
+    {
+        "key": "shift+alt+\\",
+        "command": "workbench.action.increaseViewSize",
+        "when": "sideBarFocus || panelFocus || auxiliaryBarFocus"
+    },
+    {
+        "key": "shift+alt+\\",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "editorFocus || inSettingsEditor || inSearchEditor || inSettingsJSONEditor || inKeybindingsSearch"
+    },
+    {
+        "key": "shift+alt+/",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "sideBarFocus || panelFocus || auxiliaryBarFocus"
+    },
+    {
+        "key": "shift+alt+/",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "editorFocus || inSettingsEditor || inSearchEditor || inSettingsJSONEditor || inKeybindingsSearch"
     },
 ]
