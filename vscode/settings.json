@@ -10,6 +10,7 @@
     "editor.stickyScroll.enabled": false,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
+    "editor.renderWhitespace": "all",
 
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.panel.defaultLocation": "right",
@@ -69,5 +70,6 @@
     },
     "dart.lineLength": 120,
 
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "workbench.colorTheme": "Dark Modern"
 }
