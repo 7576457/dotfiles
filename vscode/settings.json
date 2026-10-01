@@ -11,6 +11,7 @@
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
     "editor.renderWhitespace": "all",
+    "editor.inlineSuggest.enabled": false,
 
     "workbench.editor.tabActionCloseVisibility": false,
     "workbench.panel.defaultLocation": "right",
