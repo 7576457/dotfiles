@@ -1,4 +1,9 @@
 [
+    // Быстро открыть Remote Extension
+    {
+        "key": "ctrl+shift+r",
+        "command": "workbench.view.remote"
+    },
     // Копирование строки вверх/вниз: Shift+Alt+Up/Down
     {
         "key": "shift+alt+up",
@@ -128,5 +133,5 @@
         "key": "shift+alt+/",
         "command": "workbench.action.decreaseViewWidth",
         "when": "editorFocus || inSettingsEditor || inSearchEditor || inSettingsJSONEditor || inKeybindingsSearch"
-    },
+    }
 ]
