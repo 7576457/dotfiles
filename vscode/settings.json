@@ -21,6 +21,7 @@
     "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dark Modern",
 
     "window.menuBarVisibility": "compact",
     "window.commandCenter": false,
@@ -35,6 +36,8 @@
 
     "files.autoSave": "onFocusChange",
     "files.exclude": {
+        "**/.codex": true,
+        "**/.agents": true,
         "**/.DS_Store": true,
         "**/node_modules": true,
         "**/bower_components": true,
@@ -43,11 +46,11 @@
         "**/.idea": true,
         "**/.pytest_cache": true,
         "**/.mypy_cache": true,
-        "**/.venv": true,
+        "**/.venv": false,
         "**/.coverage": true,
         "**/*.py[co]": true,
         "**/htmlcoverage": true,
-        "**/docs/build": true,
+        "**/docs/build": true
     },
 
     "telemetry.telemetryLevel": "off",
@@ -56,6 +59,7 @@
     "terminal.integrated.defaultLocation": "view",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.enableVisualBell": true,
+    "terminal.integrated.fontSize": 12,
 
     "dart.enableSdkFormatter": true,
     "dart.enableServerSnippets": true,
@@ -72,5 +76,5 @@
     "dart.lineLength": 120,
 
     "python.terminal.activateEnvironment": false,
-    "workbench.colorTheme": "Dark Modern"
+    "git.openRepositoryInParentFolders": "never"
 }
