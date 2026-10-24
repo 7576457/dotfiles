@@ -1,0 +1,20 @@
+@define-color bg #1E1B25;
+@define-color surface #251F32;
+@define-color dark #110A21;
+@define-color accent #A99AC9;
+@define-color text #C9C1D9;
+@define-color muted #837999;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background-color: transparent; color: @text;
+}
+
+.modules-center { margin-top: 8px; }
+.modules-right { margin-top: 8px; margin-right: 25px; }
+.modules-left { margin-top: 8px; margin-left: 25px; }

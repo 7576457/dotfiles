@@ -1,0 +1,36 @@
+include "binds.kdl"
+include "input.kdl"
+include "layout.kdl"
+include "window-rule.kdl"
+
+prefer-no-csd
+hotkey-overlay { skip-at-startup; }
+
+spawn-at-startup "waybar"
+spawn-at-startup "/home/hehs/.config/waybar/warm.sh" "daemon"
+
+screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
+
+output "HDMI-A-1" {
+    mode "1920x1080@120.003"
+}
+
+overview {
+    zoom 0.5
+    backdrop-color "#1E1B25"
+}
+
+animations {
+    slowdown 0.6
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+cursor {
+    hide-when-typing
+    hide-after-inactive-ms 4000
+}

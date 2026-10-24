@@ -1,0 +1,91 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 25,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "niri/language",
+    "idle_inhibitor",
+    "custom/nightlight",
+    "pulseaudio",
+    "bluetooth"
+  ],
+  // "modules-center": [
+  //   "idle_inhibitor",
+  //   "custom/nightlight"
+  // ],
+  "modules-right": [
+    "clock",
+    "battery",
+    "network"
+  ],
+  "bluetooth": {
+    "format": "[  {status} ]",
+    "format-connected": "[  {device_alias} ]",
+    "format-connected-battery": "[  {device_alias} {device_battery_percentage}% ]",
+    "format-device-preference": [
+      "device1",
+      "device2"
+    ], // preference list deciding the displayed device
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+  },
+  "clock": {
+    "format": "[ TIME: {:%H:%M:%S} ]",
+    "interval": 1,
+    "on-click": "date +'%d %B %Y%n%H:%M' | wl-copy -n",
+    "tooltip": false,
+    "cursor": false
+  },
+  "battery": {
+    "format": "[ BATTERY: {capacity}% ]",
+    "format-charging": "[ BATTERY: {capacity}% + ]",
+    "interval": 30,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "tooltip": false
+  },
+  "network": {
+    "interval": 5,
+    "format-wifi": "[ NETWORK: Wi-Fi ]",
+    "format-ethernet": "[ NETWORK: Ethernet ]",
+    "format-linked": "[ NETWORK: off ]",
+    "format-disconnected": "[ NETWORK: off ]",
+    "format-disabled": "[ NETWORK: off ]",
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "[ VOLUME: {volume}% ]",
+    "format-muted": "[ VOLUME: Muted ]",
+    "scroll-step": 5,
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "tooltip": false
+  },
+  "idle_inhibitor": {
+    "format": "[ AWAKE: {icon} ]",
+    "format-icons": {
+      "activated": "On",
+      "deactivated": "Off"
+    },
+    "tooltip": false
+  },
+  "niri/language": {
+    "format": "[ LANGUAGE: {} ]",
+    "format-en": "English",
+    "format-ru": "Russian",
+    "tooltip": false
+  },
+  "custom/nightlight": {
+    "exec": "~/.config/waybar/warm.sh",
+    "return-type": "json",
+    "interval": 5,
+    "signal": 8,
+    "on-click": "setsid -f ~/.config/waybar/warm.sh toggle >/dev/null 2>&1",
+    "tooltip": false
+  }
+}

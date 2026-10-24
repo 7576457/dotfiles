@@ -1,0 +1,33 @@
+input {
+    warp-mouse-to-focus
+    focus-follows-mouse max-scroll-amount="70%"
+    keyboard {
+        xkb {
+            layout "us,ru"
+            options "grp:win_space_toggle"
+        }
+        track-layout "window" 
+        // раскладка запоминается для каждого окна отдельно
+        repeat-delay 250
+        repeat-rate 40
+    }
+    touchpad {
+        tap
+        dwt
+        // отключать тачпад, пока печатаешь
+        dwtp
+        // то же, пока двигаешь трекпоинт
+        click-method "clickfinger"
+        // клик по числу пальцев: 1 = левый, 2 = правый, 3 = средний
+        tap-button-map "left-right-middle"
+        // тап 1/2/3 пальцами
+        disabled-on-external-mouse
+        // выключать тачпад, когда подключена мышь
+        natural-scroll
+    }
+    mouse {
+        accel-speed 0.2
+        accel-profile "flat"
+    }
+}
+
