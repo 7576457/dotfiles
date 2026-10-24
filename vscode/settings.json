@@ -8,31 +8,40 @@
     "editor.guides.indentation": true,
     "editor.minimap.enabled": false,
     "editor.stickyScroll.enabled": false,
-    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.vertical": "visible",
     "editor.scrollbar.horizontal": "hidden",
     "editor.renderWhitespace": "all",
     "editor.inlineSuggest.enabled": false,
 
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": "none",
     "workbench.editor.tabActionCloseVisibility": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.browser.showInTitleBar": false,
+    "workbench.openInAgents.enabled": false,
     "workbench.panel.defaultLocation": "right",
     "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": "single",
     "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
-    "workbench.activityBar.location": "top",
+    "workbench.activityBar.location": "hidden",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Dark Modern",
+    "workbench.settings.showAISearchToggle": false,
 
-    "window.menuBarVisibility": "compact",
+    "window.menuBarVisibility": "hidden",
     "window.commandCenter": false,
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
 
     "chat.agent.enabled": false,
     "chat.commandCenter.enabled": false,
+    "chat.disableAIFeatures": true,
+
+    "github.copilot.enable": { "*": false },
+    "github.copilot.nextEditSuggestions.enabled": false,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-
-    "breadcrumbs.enabled": false,
 
     "files.autoSave": "onFocusChange",
     "files.exclude": {
@@ -60,6 +69,7 @@
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.fontSize": 12,
+    "terminal.integrated.initialHint": false,
 
     "dart.enableSdkFormatter": true,
     "dart.enableServerSnippets": true,
