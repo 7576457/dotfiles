@@ -74,6 +74,8 @@
     // Ctrl+T Ctrl+Enter: Разделить терминал (только при фокусе на терминале)
     // Ctrl+T Ctrl+F: Переключить максимизацию панели терминала
     // Ctrl+T Ctrl+Arrow Keys: Переключение между панелями терминала (только при фокусе на терминале)
+    // Ctrl+T V: Сделать окно терминала вертикальным
+    // Ctrl+T H: Сделать окно терминала горизонтальным
     {
         "key": "ctrl+t ctrl+t",
         "command": "workbench.action.terminal.toggleTerminal"
@@ -112,7 +114,16 @@
         "command": "workbench.action.terminal.focusPreviousPane",
         "when": "terminalFocus"
     },
-
+    {
+        "key": "ctrl+t ctrl+v",
+        "command": "workbench.action.positionPanelRight",
+        "when": "panelPosition == 'bottom'"
+    },
+    {
+        "key": "ctrl+t ctrl+h",
+        "command": "workbench.action.positionPanelBottom",
+        "when": "panelPosition != 'bottom'"
+    },
     // Изменение размера панелей: Shift+Alt+\ / Shift+Alt+/
     {
         "key": "shift+alt+[Backslash]",
