@@ -115,22 +115,22 @@
 
     // Изменение размера панелей: Shift+Alt+\ / Shift+Alt+/
     {
-        "key": "shift+alt+\\",
+        "key": "shift+alt+[Backslash]",
         "command": "workbench.action.increaseViewSize",
         "when": "sideBarFocus || panelFocus || auxiliaryBarFocus"
     },
     {
-        "key": "shift+alt+\\",
+        "key": "shift+alt+[Backslash]",
         "command": "workbench.action.increaseViewWidth",
         "when": "editorFocus || inSettingsEditor || inSearchEditor || inSettingsJSONEditor || inKeybindingsSearch"
     },
     {
-        "key": "shift+alt+/",
+        "key": "shift+alt+[Slash]",
         "command": "workbench.action.decreaseViewSize",
         "when": "sideBarFocus || panelFocus || auxiliaryBarFocus"
     },
     {
-        "key": "shift+alt+/",
+        "key": "shift+alt+[Slash]",
         "command": "workbench.action.decreaseViewWidth",
         "when": "editorFocus || inSettingsEditor || inSearchEditor || inSettingsJSONEditor || inKeybindingsSearch"
     }
