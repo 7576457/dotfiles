@@ -34,11 +34,7 @@
     "window.customTitleBarVisibility": "never",
 
     "chat.agent.enabled": false,
-    "chat.commandCenter.enabled": false,
     "chat.disableAIFeatures": true,
-
-    "github.copilot.enable": { "*": false },
-    "github.copilot.nextEditSuggestions.enabled": false,
 
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -57,8 +53,7 @@
         "**/.mypy_cache": true,
         "**/.venv": false,
         "**/.coverage": true,
-        "**/*.py[co]": true,
-        "**/htmlcoverage": true,
+        "**htmlcoverage": true,
         "**/docs/build": true
     },
 
@@ -70,6 +65,7 @@
     "terminal.integrated.enableVisualBell": true,
     "terminal.integrated.fontSize": 12,
     "terminal.integrated.initialHint": false,
+    "terminal.integrated.tabs.enabled": false,
 
     "dart.enableSdkFormatter": true,
     "dart.enableServerSnippets": true,
