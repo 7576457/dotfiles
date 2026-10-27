@@ -62,8 +62,7 @@ binds {
     Mod+Shift+Minus hotkey-overlay-title="Уменьшить высоту окна на 10%" { set-window-height "-10%"; }
     Mod+Shift+Equal hotkey-overlay-title="Увеличить высоту окна на 10%" { set-window-height "+10%"; }
     Mod+F hotkey-overlay-title="Развернуть колонку" { maximize-column; }
-    Mod+Shift+F hotkey-overlay-title="Растянуть окно до краёв" { maximize-window-to-edges; }
-    Mod+Shift+Ctrl+F hotkey-overlay-title="Полноэкранный режим" { fullscreen-window; }
+    Mod+Shift+F hotkey-overlay-title="Полноэкранный режим" { fullscreen-window; }
     Mod+C hotkey-overlay-title="Центрировать колонку" { center-column; }
     Mod+Shift+C hotkey-overlay-title="Центрировать видимые колонки" { center-visible-columns; }
 
