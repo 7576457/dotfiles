@@ -1,7 +1,6 @@
 // colorsschemer.ru #251F32 #1E1B25 #110A21 #7B6D99 #837999
 layout {
     gaps 12
-    empty-workspace-above-first
     center-focused-column "on-overflow"
     always-center-single-column
     background-color "#251f32"
