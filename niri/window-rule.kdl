@@ -12,18 +12,6 @@ window-rule {
         color "#00000070"
     }
 }
-window-rule {
-    match app-id="^Alacritty$"
-    default-column-width {
-        proportion 0.65
-    }
-}
-window-rule {
-    match app-id="^firefox$"
-    default-column-width {
-        proportion 0.65
-    }
-}
 // Авторизация, OAuth2, вход в аккаунты
 window-rule {
     match app-id="firefox$" title="(?i)(sign in|log in|login|authorization|authentication|oauth|войти|авторизация|вход)"
