@@ -3,6 +3,7 @@ binds {
     Mod+K hotkey-overlay-title="Keybinds" { spawn "bash" "/home/hehs/.config/niri/binds-list.sh"; }
     Mod+Return hotkey-overlay-title="Terminal" { spawn "alacritty"; }
     Mod+Shift+Return hotkey-overlay-title="Browser" { spawn "firefox"; }
+    Mod+T hotkey-overlay-title="File Manager" { spawn "nautilus"; }
 
     Mod+D hotkey-overlay-title="Applications" { spawn "fuzzel"; }
     Mod+Alt+L hotkey-overlay-title="Lock Screen" { spawn "hyprlock"; }
@@ -112,5 +113,4 @@ binds {
     Mod+Ctrl+WheelScrollLeft hotkey-overlay-title="Прокрутка: переместить колонку влево" { move-column-left; }
     Mod+Ctrl+Shift+WheelScrollDown hotkey-overlay-title="Прокрутка: переместить колонку вправо" { move-column-right; }
     Mod+Ctrl+Shift+WheelScrollUp hotkey-overlay-title="Прокрутка: переместить колонку влево" { move-column-left; }
-    
 }
