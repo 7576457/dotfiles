@@ -12,49 +12,19 @@ window-rule {
         color "#00000070"
     }
 }
-// Авторизация, OAuth2, вход в аккаунты
-window-rule {
-    match app-id="firefox$" title="(?i)(sign in|log in|login|authorization|authentication|oauth|войти|авторизация|вход)"
-    open-floating true
-    default-column-width {
-        fixed 650
-    }
-    default-window-height {
-        fixed 550
-    }
-}
 // Загрузки, библиотека, история, закладки
 window-rule {
-    match app-id="firefox$" title="(?i)^(library|downloads|history|bookmarks|библиотека|загрузки|журнал|закладки)$"
+    match app-id="firefox$" title="(?i)^Library$"
     open-floating true
-    default-column-width {
-        fixed 850
-    }
-    default-window-height {
-        fixed 650
-    }
-}
-// Дополнительные окна расширений и настроек
-window-rule {
-    match app-id="firefox$" title="(?i)(extensions|add-ons manager|расширения|дополнения|permissions|разрешения)"
-    open-floating true
-    default-column-width {
-        fixed 750
-    }
-    default-window-height {
-        fixed 600
-    }
+    default-column-width { fixed 850; }
+    default-window-height { fixed 650; }
 }
 // Picture-in-Picture
 window-rule {
     match app-id="firefox$" title="(?i)^(picture-in-picture|картинка в картинке)$"
     open-floating true
-    default-column-width {
-        fixed 480
-    }
-    default-window-height {
-        fixed 270
-    }
+    default-column-width { fixed 480; }
+    default-window-height { fixed 270; }
     default-floating-position x=20 y=20 relative-to="bottom-right"
     open-focused false
 }
@@ -62,23 +32,20 @@ window-rule {
     match app-id="^org\\.telegram\\.desktop$" title="^Media viewer$"
     open-floating true
     open-fullscreen false
-    default-column-width {
-        proportion 1.0
-    }
-    default-window-height {
-        proportion 1.0
-    }
+    default-column-width { proportion 1.0; }
+    default-window-height { proportion 1.0; }
     default-floating-position x=0 y=0 relative-to="top-left"
-    border {
-        off
-    }
-    focus-ring {
-        off
-    }
+    border { off; }
+    focus-ring { off; }
 }
 window-rule {
     match app-id="^org\\.keepassxc\\.KeePassXC$"
     match app-id="^org\\.gnome\\.World\\.Secrets$"
     block-out-from "screen-capture"
 }
-
+window-rule {
+    match app-id="^bt-tui$"
+    open-floating true
+    default-column-width { fixed 500; }
+    default-window-height { fixed 700; }
+}

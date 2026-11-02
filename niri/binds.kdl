@@ -2,6 +2,7 @@ binds {
     Mod+K                 hotkey-overlay-title="Keybinds" repeat=false { spawn "bash" "/home/hehs/.config/niri/binds-list.sh"; }
     Mod+T                 hotkey-overlay-title="File Manager" repeat=false { spawn "nautilus"; }
     Mod+D                 hotkey-overlay-title="Applications" repeat=false { spawn "fuzzel"; }
+    Mod+B                 hotkey-overlay-title="Bluetooth" repeat=false { spawn "alacritty" "--class" "bt-tui" "-e" "bluetui"; }
 
     Mod+Alt+L             hotkey-overlay-title="Lock Screen" { spawn "hyprlock"; }
     Mod+Alt+W             hotkey-overlay-title="Night Light" { spawn "/home/hehs/.config/waybar/warm.sh" "toggle"; }

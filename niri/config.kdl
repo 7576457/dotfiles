@@ -31,6 +31,8 @@ gestures {
 }
 
 cursor {
+    xcursor-theme "Adwaita"
+    xcursor-size 32
     hide-when-typing
     hide-after-inactive-ms 4000
 }
