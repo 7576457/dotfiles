@@ -55,3 +55,7 @@ schemaStore = { enable = true }
 
 [[language]]
 name = "markdown"
+
+[[language]]
+name = "css"
+auto-format = false
