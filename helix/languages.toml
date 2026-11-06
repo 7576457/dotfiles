@@ -1,0 +1,57 @@
+[language-server.nixd]
+command = "nixd"
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
+[language-server.ty.config.ty]
+diagnosticMode = "workspace"
+
+[language-server.ty.config.ty.completions]
+autoImport = true
+
+[[language]]
+name = "nix"
+formatter = { command = "nixfmt" }
+language-servers = ["nixd", "nil"]
+
+[[language]]
+name = "python"
+formatter = { command = "ruff", args = ["format", "-"] }
+language-servers = ["ruff", "ty"]
+
+[language-server.kdl-lsp]
+command = "kdl-lsp"
+
+[[language]]
+name = "kdl"
+language-servers = ["kdl-lsp"]
+
+[[language]]
+name = "toml"
+language-servers = ["taplo"]
+
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server"]
+
+[[language]]
+name = "jsonc"
+language-servers = ["vscode-json-language-server"]
+
+[[language]]
+name = "yaml"
+language-servers = ["yaml-language-server"]
+
+[language-server.yaml-language-server.config.yaml]
+format = { enable = true }
+validate = true
+schemaStore = { enable = true }
+
+[[language]]
+name = "markdown"
