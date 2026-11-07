@@ -1,38 +1,20 @@
 {
-  "layer": "top",
-  "position": "top",
-  "height": 30,
-  "spacing": 25,
+  "spacing": 12,
+  "margin-top": 3,
+  "margin-left": 12,
+  "margin-right": 12,
   "reload_style_on_change": true,
   "modules-left": [
     "niri/language",
     "idle_inhibitor",
     "custom/nightlight",
-    "pulseaudio",
-    "bluetooth"
+    "pulseaudio"
   ],
-  // "modules-center": [
-  //   "idle_inhibitor",
-  //   "custom/nightlight"
-  // ],
   "modules-right": [
     "clock",
-    "battery",
-    "network"
+    "network",
+    "battery"
   ],
-  "bluetooth": {
-    "format": "[  {status} ]",
-    "format-connected": "[  {device_alias} ]",
-    "format-connected-battery": "[  {device_alias} {device_battery_percentage}% ]",
-    "format-device-preference": [
-      "device1",
-      "device2"
-    ], // preference list deciding the displayed device
-    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
-  },
   "clock": {
     "format": "[ TIME: {:%H:%M:%S} ]",
     "interval": 1,
@@ -81,11 +63,11 @@
     "tooltip": false
   },
   "custom/nightlight": {
-    "exec": "~/.config/waybar/warm.sh",
+    "exec": "~/dotfiles/waybar/warm.sh",
     "return-type": "json",
     "interval": 5,
     "signal": 8,
-    "on-click": "setsid -f ~/.config/waybar/warm.sh toggle >/dev/null 2>&1",
+    "on-click": "~/dotfiles/waybar/warm.sh toggle",
     "tooltip": false
   }
 }

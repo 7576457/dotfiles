@@ -1,11 +1,9 @@
 binds {
-    Mod+K                 hotkey-overlay-title="Keybinds" repeat=false { spawn "bash" "/home/hehs/.config/niri/binds-list.sh"; }
     Mod+T                 hotkey-overlay-title="File Manager" repeat=false { spawn "nautilus"; }
-    Mod+D                 hotkey-overlay-title="Applications" repeat=false { spawn "fuzzel"; }
-    Mod+B                 hotkey-overlay-title="Bluetooth" repeat=false { spawn "alacritty" "--class" "bt-tui" "-e" "bluetui"; }
-
-    Mod+Alt+L             hotkey-overlay-title="Lock Screen" { spawn "hyprlock"; }
-    Mod+Alt+W             hotkey-overlay-title="Night Light" { spawn "/home/hehs/.config/waybar/warm.sh" "toggle"; }
+    Mod+D                 hotkey-overlay-title="Applications" repeat=false { spawn "rofi" "-show" "drun"; }
+    Mod+slash             hotkey-overlay-title="Commands" repeat=false { spawn "rofi" "-show" "run"; }
+    Mod+Shift+O           hotkey-overlay-title="Text OCR" repeat=false { spawn "~/.local/bin/ocr"; }   
+    Mod+Alt+W             hotkey-overlay-title="Night Light" { spawn "~/dotfiles/waybar/warm.sh" "toggle"; }
 
     Mod+O                 hotkey-overlay-title="Overview" repeat=false { toggle-overview; }
     Mod+W                 hotkey-overlay-title="Close window" repeat=false { close-window; }

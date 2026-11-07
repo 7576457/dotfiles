@@ -6,8 +6,8 @@ include "window-rule.kdl"
 prefer-no-csd
 hotkey-overlay { skip-at-startup; }
 
-spawn-at-startup "waybar"
 spawn-at-startup "/home/hehs/.config/waybar/warm.sh" "daemon"
+spawn-at-startup "wl-gammarelay-rs" "run"
 
 screenshot-path "~/Pictures/Screenshots/%Y-%m-%d %H-%M-%S.png"
 
