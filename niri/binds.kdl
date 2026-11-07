@@ -3,7 +3,7 @@ binds {
     Mod+D                 hotkey-overlay-title="Applications" repeat=false { spawn "rofi" "-show" "drun"; }
     Mod+slash             hotkey-overlay-title="Commands" repeat=false { spawn "rofi" "-show" "run"; }
     Mod+Shift+O           hotkey-overlay-title="Text OCR" repeat=false { spawn "~/.local/bin/ocr"; }   
-    Mod+Alt+W             hotkey-overlay-title="Night Light" { spawn "~/dotfiles/waybar/warm.sh" "toggle"; }
+    Mod+Alt+W             hotkey-overlay-title="Night Light" repeat=false { spawn "~/dotfiles/waybar/warm.sh" "toggle"; }
 
     Mod+O                 hotkey-overlay-title="Overview" repeat=false { toggle-overview; }
     Mod+W                 hotkey-overlay-title="Close window" repeat=false { close-window; }
