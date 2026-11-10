@@ -38,10 +38,6 @@ binds {
     Mod+Shift+F           hotkey-overlay-title="Полноэкранный режим" { fullscreen-window; }
     Mod+C                 hotkey-overlay-title="Центрировать окно" { center-column; }
 
-    // Плавающие окна
-    Mod+V                 hotkey-overlay-title="Переключить плавающий режим" { toggle-window-floating; }
-    Mod+Shift+V           hotkey-overlay-title="Переключить фокус между плавающими и плиточными окнами" { switch-focus-between-floating-and-tiling; }
-
     // Рабочие столы: клавиатура
     Mod+Up                hotkey-overlay-title="Фокус на стол выше" { focus-workspace-up; }
     Mod+Down              hotkey-overlay-title="Фокус на стол ниже" { focus-workspace-down; }
