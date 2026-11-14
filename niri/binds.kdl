@@ -2,10 +2,11 @@ binds {
     Mod+T                 hotkey-overlay-title="File Manager" repeat=false { spawn "nautilus"; }
     Mod+D                 hotkey-overlay-title="Applications" repeat=false { spawn "rofi" "-show" "drun"; }
     Mod+slash             hotkey-overlay-title="Commands" repeat=false { spawn "rofi" "-show" "run"; }
-    Mod+Shift+O           hotkey-overlay-title="Text OCR" repeat=false { spawn "~/.local/bin/ocr"; }   
-    Mod+Alt+W             hotkey-overlay-title="Night Light" repeat=false { spawn "~/dotfiles/waybar/warm.sh" "toggle"; }
 
-    Mod+O                 hotkey-overlay-title="Overview" repeat=false { toggle-overview; }
+    Mod+Ctrl+T            hotkey-overlay-title="Text OCR" repeat=false { spawn-sh "~/.config/ocr.sh"; }   
+    Mod+Ctrl+W            hotkey-overlay-title="Night Light" repeat=false { spawn "~/dotfiles/waybar/warm.sh" "toggle"; }
+
+    Mod+Page_Up           hotkey-overlay-title="Overview" repeat=false { toggle-overview; }
     Mod+W                 hotkey-overlay-title="Close window" repeat=false { close-window; }
     Mod+Return            hotkey-overlay-title="Terminal" repeat=false { spawn "alacritty"; }
     Mod+Shift+Return      hotkey-overlay-title="Browser" repeat=false { spawn "firefox"; }
@@ -24,9 +25,9 @@ binds {
     XF86MonBrightnessDown hotkey-overlay-title="Уменьшить яркость" allow-when-locked=true { spawn "brightnessctl" "--class=backlight" "set" "10%-"; }
 
     // Скриншоты
-    Print                 hotkey-overlay-title="Скриншот области" { screenshot; }
-    Mod+Print             hotkey-overlay-title="Скриншот экрана" repeat=false { screenshot-screen write-to-disk=false show-pointer=false; }
-    Mod+Shift+Print       hotkey-overlay-title="Скриншот окна" repeat=false { screenshot-window write-to-disk=false show-pointer=false; }
+    Print                 hotkey-overlay-title="Screenshot editor" { screenshot; }
+    Mod+Print             hotkey-overlay-title="Screenshot display" repeat=false { screenshot-screen write-to-disk=false show-pointer=false; }
+    Mod+Shift+Print       hotkey-overlay-title="Screenshot window" repeat=false { screenshot-window write-to-disk=false show-pointer=false; }
 
     // Размеры окон
     Mod+Minus             hotkey-overlay-title="Уменьшить ширину окна на 25%" { set-column-width "-25%"; }
@@ -34,9 +35,9 @@ binds {
     Mod+Shift+Minus       hotkey-overlay-title="Уменьшить высоту окна на 25%" { set-window-height "-25%"; }
     Mod+Shift+Equal       hotkey-overlay-title="Увеличить высоту окна на 25%" { set-window-height "+25%"; }
 
-    Mod+F                 hotkey-overlay-title="Развернуть окно" { maximize-column; }
-    Mod+Shift+F           hotkey-overlay-title="Полноэкранный режим" { fullscreen-window; }
-    Mod+C                 hotkey-overlay-title="Центрировать окно" { center-column; }
+    Mod+F                 hotkey-overlay-title="Maximize window" { maximize-column; }
+    Mod+Shift+F           hotkey-overlay-title="Fullscreen window" { fullscreen-window; }
+    Mod+C                 hotkey-overlay-title="Center window" { center-column; }
 
     // Рабочие столы: клавиатура
     Mod+Up                hotkey-overlay-title="Фокус на стол выше" { focus-workspace-up; }
