@@ -6,7 +6,6 @@
   "reload_style_on_change": true,
   "modules-left": [
     "niri/language",
-    "idle_inhibitor",
     "custom/nightlight",
     "pulseaudio"
   ],
@@ -16,9 +15,8 @@
     "battery"
   ],
   "clock": {
-    "format": "[ TIME: {:%H:%M:%S} ]",
-    "interval": 1,
-    "on-click": "date +'%d %B %Y%n%H:%M' | wl-copy -n",
+    "format": "[ {:%H:%M %d.%m.%Y} ]",
+    "interval": 30,
     "tooltip": false,
     "cursor": false
   },
@@ -45,7 +43,7 @@
     "format": "[ VOLUME: {volume}% ]",
     "format-muted": "[ VOLUME: Muted ]",
     "scroll-step": 5,
-    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click": "/run/current-system/sw/bin/wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "tooltip": false
   },
   "idle_inhibitor": {
